@@ -1,2 +1,2 @@
-# Demo_2_Terraform
+# Demo №2 Terraform
 Terraform for Demo №2
