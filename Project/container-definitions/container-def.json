@@ -1,0 +1,21 @@
+[
+    {
+      "name": "flask-app",
+      "image": "174462142093.dkr.ecr.us-east-1.amazonaws.com/test-rep:latest",
+      "cpu": 4,
+      "memory": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": { 
+          "awslogs-group" : "/ecs/frontend-container",
+          "awslogs-region": "us-east-1"
+        }
+      }
+    }
+]
